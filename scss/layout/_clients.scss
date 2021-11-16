@@ -1,0 +1,61 @@
+.clients {
+  background-color: var(--primary-white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-clients {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo-clients {
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.clients-item {
+  display: block;
+  height: 92px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:hover .logo-company,
+  &:focus .logo-company {
+    fill: var(--accent-color);
+  }
+}
+
+.logo-company {
+  fill: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
