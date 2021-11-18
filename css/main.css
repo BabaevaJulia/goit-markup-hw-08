@@ -92,6 +92,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .backdrop {
   position: fixed;
   z-index: 2;
@@ -519,12 +525,39 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
+}
+
 .section-container {
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .item::before {
@@ -564,12 +597,28 @@ button {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-title {
+    text-align: left;
+  }
+}
+
 .section-text {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   width: 100%;
+}
+
+.works {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+  }
 }
 
 .section-box {
@@ -635,34 +684,71 @@ button {
 
 .command {
   background-color: var(--fourth-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .command-title {
+  margin-bottom: 30px;
   color: var(--primary-text-color);
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
 
-.command-pre-title {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .command-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .command-list {
+  margin-bottom: -30px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .command-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .command-item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  width: 270px;
   margin-left: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .command-item {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .command-subject {
@@ -733,35 +819,72 @@ button {
 
 .clients {
   background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title-clients {
   color: var(--primary-text-color);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title-clients {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .logo-clients {
-  padding: 0px;
-  margin: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  margin-left: -30px;
   margin-bottom: -30px;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-clients {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: -30px;
+  }
 }
 
 .clients-item {
-  display: block;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 2 - 30px);
   height: 92px;
   margin-left: 30px;
   margin-bottom: 30px;
-  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    flex-basis: calc(100% / 3 - 30px);
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .clients-link {
@@ -770,9 +893,21 @@ button {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 100%;
   height: 92px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .clients-link:hover, .clients-link:focus {
