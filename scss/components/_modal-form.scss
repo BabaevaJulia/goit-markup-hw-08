@@ -103,8 +103,8 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 
@@ -118,6 +118,11 @@
 
     border: 1px solid var(--primary-text-color);
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

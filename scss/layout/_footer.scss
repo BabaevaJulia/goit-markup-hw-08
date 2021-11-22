@@ -2,6 +2,13 @@
   text-align: center;
   align-items: baseline;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -67,4 +74,8 @@
 }
 .about-tel {
   display: block;
+}
+
+.footer-left {
+  // display: flex;
 }

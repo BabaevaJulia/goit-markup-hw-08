@@ -1,7 +1,10 @@
 .footer-right {
   width: 206px;
   height: 80px;
-  margin: 60px auto 60px auto;
+
+  @media screen and (max-width: 768px) {
+    margin: 60px auto 60px auto;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
