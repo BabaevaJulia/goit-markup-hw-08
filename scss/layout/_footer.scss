@@ -1,6 +1,10 @@
 .footer-container {
-  display: flex;
+  text-align: center;
   align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .page-footer {
   color: var(--primary-white-color);

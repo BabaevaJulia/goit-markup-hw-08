@@ -1,7 +1,11 @@
 .footer-right {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  margin: 60px auto 60px auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .footer-right-list {
   list-style: none;
