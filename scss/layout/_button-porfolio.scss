@@ -1,7 +1,17 @@
 .section-info {
   background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-link {
@@ -30,10 +40,26 @@
 
 .btn-info {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 
 .btn-item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 }
