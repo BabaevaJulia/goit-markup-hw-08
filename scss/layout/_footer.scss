@@ -1,6 +1,8 @@
 .footer-container {
-  text-align: center;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    align-items: baseline;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -11,6 +13,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .page-footer {
@@ -74,4 +77,7 @@
 }
 .about-tel {
   display: block;
+}
+.nav-footer {
+  align-items: flex-start;
 }
